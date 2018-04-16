@@ -21,3 +21,8 @@ $('.slider').slick({
     slideToShow:1,
     slideToScroll:1
 });
+
+$(document).on('click','[data-toggle="lightbox"]',function(event){
+    event.preventDefault();
+    $(this).ekkoLightbox();
+})
