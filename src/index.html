@@ -11,7 +11,7 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
                 <a href="index.html" class="navbar-brand">Glozzem</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -173,8 +173,37 @@
             </div>
         </section>
 
+        <!--video play section-->
+        <section id="video-play">
+            <div class="dark-overlay">
+                <div class="row">
+                    <div class="container p-5">
+                        <a href="#" class="video" data-video="https://www.youtube.com/embed/PieybvfPrOk"
+                           data-toggle="modal" data-target="#videoModal">
+                            <i class="fa fa-play" ></i>
+                        </a>
+                        <h1>See What We Do</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Video Modal-->
+        <div class="modal fade" id="videoModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
